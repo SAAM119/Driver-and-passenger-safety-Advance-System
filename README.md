@@ -1,15 +1,36 @@
-# SafeGuard Emergency Dashboard Backend
+# 🚗 Driver & Passenger Safety System with ESP32, AI, and IoT  
 
-This is the backend service for the SafeGuard Emergency Dashboard, built with Node.js and Firebase.
+A real-time **driver + passenger safety prototype** integrating **ESP32, Blynk IoT, Firebase, Facial Recognition (OpenCV), and Web Dashboard**.  
+This system ensures **driver authentication, alcohol detection, passenger SOS alerts, and live vehicle tracking**, designed for **smart mobility and transport safety**.  
+
+
 
 ## Features
+## 📌 Features  
+- ✅ **Facial Recognition Access Control** → Vehicle starts only for authorized driver  
+- ✅ **Alcohol Detection** (MQ3 + ESP32) → Blocks motor & triggers buzzer if detected  
+- ✅ **Motor Control with Safety Logic** → Works only when conditions are safe  
+- ✅ **SOS System** → Passenger can raise emergency alert → displayed on website & stored in log  
+- ✅ **Live Location Tracking** → Vehicle location shown in real time on website  
+- ✅ **Web Dashboard** → Vehicle number search, SOS alerts, status indicators, emergency logs  
+- ✅ **Blynk IoT Integration** → Remote control + status monitoring  
 
+## In short -
 - Real-time vehicle tracking
 - SOS alert management
 - Emergency contact management
 - System status monitoring
 - Authentication and authorization
 - Logging system
+
+ ## ⚙️ How It Works  
+1. **Driver enters vehicle → system checks face recognition**  
+2. **If authorized & no alcohol detected → motor starts**  
+3. **If alcohol detected → motor blocked + buzzer alert** 
+4. **If alcohol detected & its a emergency to go → motor will only Start by authorities** 
+4. **Passenger presses SOS button → alert sent to website + log stored**  
+5. **Website shows live status, location, and emergency logs**  
+
 
 ## Prerequisites
 
@@ -171,6 +192,9 @@ The API uses standard HTTP status codes:
 3. Commit your changes
 4. Push to the branch
 5. Create a new Pull Request
+
+## 👨‍💻 Author  
+Developed by **Aman Vishwash** 
 
 ## License
 
